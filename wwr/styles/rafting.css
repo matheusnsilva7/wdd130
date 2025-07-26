@@ -61,7 +61,7 @@ article {
   padding: 8px;
 }
 
-.socialmedia a {
+.socialmedia a , nav a{
   text-decoration: none;
 }
 
