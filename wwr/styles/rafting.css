@@ -25,12 +25,34 @@ footer {
   margin: 0 auto;
 }
 
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
 h1,
 h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
-
+h2 {
+  text-align: center;
+}
 nav,
 p,
 section,
@@ -76,4 +98,31 @@ article {
   float: right;
   width: 125px;
   margin-left: 8px;
+}
+
+.adventure {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  gap: 2rem;
+}
+.adventure h2 {
+  grid-column: span 5;
+}
+.adventure img {
+  width: 9rem;
+  height: 9rem;
+  object-fit: cover;
+}
+figcaption {
+  text-align: center;
+}
+footer {
+  display: grid;
+  grid-template-columns: repeat(6, 140px);
+}
+footer p {
+  grid-column: span 5;
+  padding-left: 140px;
+  text-align: center;
 }
