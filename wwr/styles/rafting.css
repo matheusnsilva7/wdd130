@@ -135,9 +135,10 @@ footer p {
   justify-content: space-between;
   gap: 2rem;
 }
-.contact-info h2,
+.contact-info h1,
 .team h2 {
   flex: 0 0 100%;
+  text-align: center;
 }
 .map {
   width: 400px;
@@ -226,4 +227,14 @@ form button {
   margin: 1.5rem auto 0;
   display: block;
 }
-
+.checkbox_container {
+  display: flex;
+  align-items: center;
+}
+.checkbox_container:nth-of-type(2) {
+  margin: 1rem 0;
+}
+.checkbox_container label {
+  margin: 0;
+  padding-left: 5px;
+}

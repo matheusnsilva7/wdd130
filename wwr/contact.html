@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta name="author" content="Matheus silva" >
-    <link rel="stylesheet" href="styles/rafting.css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matheus silva">
+    <link rel="stylesheet" href="styles/rafting.css">
     <title>Contact Us | Whitewater Rafting</title>
     <meta
       name="description"
@@ -32,7 +32,7 @@
 
     <main>
       <section class="contact-info">
-        <h2>Contact Information</h2>
+        <h1>Contact Information</h1>
         <div class="address">
           <p>123 Rapids Road, River City, CO 80000</p>
           <p>Phone: (800) 555-RAFT</p>
@@ -75,18 +75,16 @@
           <input type="email" id="email" name="email" required />
 
           <p>Purpose of message:</p>
-          <label
-            ><input type="radio" name="purpose" value="general" required />
-            General Inquiry</label
-          >
-          <label
-            ><input type="radio" name="purpose" value="reservation" />
-            Reservation Question</label
-          >
-          <label
-            ><input type="radio" name="purpose" value="website" /> Website
-            Suggestion</label
-          >
+            <div class="checkbox_container">
+            <input type="radio" name="purpose" id="general" value="general" required />
+            <label for="general">General Inquiry</label></div>
+            <div class="checkbox_container">
+                <input type="radio" name="purpose" id="reservation" value="reservation" />
+                <label for="reservation">Reservation Question</label></div>
+            <div class="checkbox_container">
+                <input type="radio" name="purpose" id="suggestion" value="website" />
+                <label for="suggestion">Website Suggestion</label>
+            </div>
 
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="5" required></textarea>
