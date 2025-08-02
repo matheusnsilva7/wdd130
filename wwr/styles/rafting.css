@@ -40,8 +40,8 @@ nav {
   padding: 0;
 }
 
-nav ul li a {
-  color: white;
+nav a {
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -61,7 +61,8 @@ article {
   padding: 8px;
 }
 
-.socialmedia a , nav a{
+.socialmedia a,
+nav a {
   text-decoration: none;
 }
 
@@ -126,3 +127,103 @@ footer p {
   padding-left: 140px;
   text-align: center;
 }
+
+.contact-info,
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.contact-info h2,
+.team h2 {
+  flex: 0 0 100%;
+}
+.map {
+  width: 400px;
+  border-radius: 10px;
+  border: 0px;
+  height: 400px;
+}
+
+.team img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 5px;
+}
+
+.contact-form,
+.team {
+  padding-top: 4rem;
+}
+
+form {
+  width: 650px;
+  margin: 2rem auto;
+  padding: 2rem 3rem;
+  border: 1px solid var(--accent1-color);
+  border-radius: 10px;
+  font-family: sans-serif;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  background-color: #fff;
+  color: var(--accent1-color);
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form p {
+  margin-top: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+form label input[type="radio"],
+form label input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+form button {
+  padding: 0.75rem 2rem;
+  background-color: #ffffff;
+  color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin: 1.5rem auto 0;
+  display: block;
+}
+
